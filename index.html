@@ -68,6 +68,20 @@
     </div>
   </div>
 
+  <div id="app">
+    {{ text }}
+  </div>
+
+  <script src="https://unpkg.com/vue@3"></script>
+  <script>
+    const vm = Vue.createApp({
+      data() {
+        return {
+          text: 'new Vue',
+        }
+      }
+    }).mount('#app')
+  </script>
 </body>
 
 </html>
